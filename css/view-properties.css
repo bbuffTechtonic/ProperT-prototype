@@ -1,16 +1,20 @@
+#indiv-chart {
+  padding-top: 10px;
+}
+
 #carouselExampleIndicators {
-  width: 75vw;
+  width: 35vw;
   margin: 0 auto;
-  padding: 25px;
+  padding: 10px;
+}
+
+.img-fluid {
+  max-width: 35%;
+  max-height: auto;
 }
 
 .centered {
   margin: auto;
-}
-
-#chart {
-  background-color: gray;
-  border: 2px solid black;
 }
 
 .carousel-caption {
