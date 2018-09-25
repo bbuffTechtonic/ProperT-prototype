@@ -2,11 +2,29 @@
   border: solid 1px;
 }
 
-#ytd-chart {
+canvas {
   border: solid 1px;
 }
 
-#ytd-totals {
+.row-cell {
+  text-align: center;
   border: solid 1px;
 }
+
+th {
+  text-align: center;
+}
+
+#ytd-totals {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#fiscal-year {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#ytd-chart {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

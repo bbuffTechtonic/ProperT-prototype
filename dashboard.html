@@ -34,26 +34,10 @@
   </nav>
   <section>
 
-    <div class="row justify-content-start">
-      <div class="col-4">
-        One of two columns
-      </div>
-      <div class="col-4">
-        One of two columns
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-6">
-        One of two columns
-      </div>
-      <div class="col-6">
-        One of two columns
-      </div>
-    </div>
       <!-- Canvas for Chart -->
-      <div class="row justify-content-center">
-        <div class="col-4">
-          <div id="ytd-chart" class="container">
+      <div id="ytd-chart" class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
             <canvas id="canvas-ytd-chart">
             </canvas>
           </div>
@@ -62,36 +46,32 @@
 
       <!-- Container for Fiscal Year Dropdown selector -->
       <div id="fiscal-year" class="container">
-        <p id="fiscal-year-label">Select Fiscal Year:</p>
-        <datalist id="dl-fiscal-year">
-        </datalist>
+        <div class="col-12 float-center">
+          <p id="fiscal-year-label">Select Fiscal Year:</p>
+          <datalist id="dl-fiscal-year">
+          </datalist>
+        </div>
       </div>
 
       <!-- Container for YTD Totals -->
       <div id="ytd-totals" class="container">
-        <div class="row">
-          <div class="col-6 float-left">
-            <p id="total-ytd-income-label">Total Properties Income (YTD):</p>
-          </div>
-          <div class="col-6 float-right">
-            <p id="total-ytd-income-amount">9,999,999.00</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 float-left">
-            <p id="total-ytd-expenses-label">Total Properties Expenses (YTD):</p>
-          </div>
-          <div class="col-6 float-right">
-            <p id="total-ytd-expenses-amount">9,999,999.00</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 float-left">
-            <p id="total-ytd-profit-label">Total Properties Profit (YTD):</p>
-          </div>
-          <div class="col-6 float-right">
-           <p id="total-ytd-profit-amount">9,999,999.00</p>
-          </div>
+        <div class="col-12 float-center">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Total Properties Income (YTD):</th>
+                <th scope="col">Total Properties Expenses (YTD):</th>
+                <th scope="col">Total Properties Profit (YTD):</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="row-cell">9,999,999.00</td>
+                <td class="row-cell">9,999,999.00</td>
+                <td class="row-cell">9,999,999.00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
