@@ -32,24 +32,28 @@
       </div>
     </div>
   </nav>
+
   <section>
 
       <!-- Canvas for Chart -->
       <div id="ytd-chart" class="container">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <canvas id="canvas-ytd-chart">
-            </canvas>
-          </div>
+        <div class="col-12 float-center">
+          <canvas id="canvas-ytd-chart">
+          </canvas>
         </div>
       </div>
 
       <!-- Container for Fiscal Year Dropdown selector -->
       <div id="fiscal-year" class="container">
         <div class="col-12 float-center">
-          <p id="fiscal-year-label">Select Fiscal Year:</p>
-          <datalist id="dl-fiscal-year">
-          </datalist>
+          <p id="fiscal-year-label">Select Fiscal Year:
+          <select id = "my-year">
+            <option value = "2017">2017</option>
+            <option value = "2018">2018</option>
+            <option value = "2019">2019</option>
+            <option value = "2020">2020</option>
+          </select>
+        </p>
         </div>
       </div>
 
