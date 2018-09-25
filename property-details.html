@@ -9,12 +9,68 @@
   <nav>
 
   </nav>
-  <section id="property-details">
-
-  </section>
-  <section id="expense-details">
-    
-  </section>
+  <div class="container">
+    <div class="row">
+      <section id="property-details">
+        
+      </section>
+    </div>
+    <section id="expense-details">
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mileage</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mortgage</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maintenance</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Supplies/Goods</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Misc</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rent</a>
+          </div>
+        </div>
+        <div class="col-9 float-right">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"><input type="checkbox"></th>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Category</th>
+                <th scope="col">Image</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="col"><input type="checkbox"></th>
+                <td>6/31/18</td>
+                <td>Fridge</td>
+                <td>$3000</td>
+                <td>Supplies/Goods</td>
+                <td><input type="file" name="pic" accept="image/*"></td>
+              </tr>
+              <tr>
+                <th scope="col"><input type="checkbox"></th>
+                <td>7/1/18</td>
+                <td>Rent paid</td>
+                <td>$1500</td>
+                <td>Rent</td>
+                <td><input type="file" name="pic" accept="image/*"></td>
+              </tr>
+              <tr>
+                <th scope="col"><input type="checkbox"></th>
+                <td>7/15/18</td>
+                <td></td>
+                <td></td>
+                <td>Supplies/Goods</td>
+                <td><input type="file" name="pic" accept="image/*"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
   <footer>
     
   </footer>
