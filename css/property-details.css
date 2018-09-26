@@ -14,3 +14,12 @@ table #expenses-table {
 .prop-details-container {
   margin-bottom: 150px;
 }
+
+#indiv-property-details {
+  margin: 30px 0px;
+}
+
+#indiv-property-details-header {
+  background-color: #343a40;
+  color: white;
+}
