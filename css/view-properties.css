@@ -21,7 +21,7 @@ Extra large devices (large desktops, 1200px and up)
   padding-bottom: 20px;
 }
 /* carouselExampleIndicators */
-#carousel {
+#carouselExampleIndicators {
   width: 100vw;
   margin: 0 auto;
   padding: 20px;
@@ -34,13 +34,13 @@ Extra large devices (large desktops, 1200px and up)
 }
 
 @media (min-width: 768px) {
-  #carousel {
+  #carouselExampleIndicators {
     width: 75vw;
   }
 }
 
 @media (min-width: 992px) {
-  #carousel {
+  #carouselExampleIndicators {
     width: 50vw;
   }
 }
