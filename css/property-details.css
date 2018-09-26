@@ -1,0 +1,15 @@
+td.image-upload > input[type="file"] {
+  display: none;
+}
+
+label[for="file-input"]:hover {
+  cursor: pointer;
+}
+
+.sidebar-nav .active{
+  background: rgb(118, 19, 76);
+}
+
+.sidebar-nav {
+  color: rgb(118, 19, 76);
+}
