@@ -4,16 +4,8 @@ td.image-upload > input[type="file"] {
 
 label[for="file-input"]:hover {
   cursor: pointer;
-<<<<<<< HEAD
-}
-=======
 }
 
-.sidebar-nav .active{
-  background: rgb(118, 19, 76);
+table #expenses-table{
+  height: 300px;
 }
-
-.sidebar-nav {
-  color: rgb(118, 19, 76);
-}
->>>>>>> playing with the sticky footer

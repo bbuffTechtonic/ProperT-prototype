@@ -55,21 +55,21 @@
           <button class="btn btn-outline-danger">Delete</button>
         </div>
       </div>
-      <div class="row rounded border">
-        <div class="col-sm-2">
-          <nav class="nav flex-column nav-pills border" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active border bg-success" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
-            <a class="nav-link border text-success" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mileage</a>
-            <a class="nav-link border text-success" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mortgage</a>
-            <a class="nav-link border text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maintenance</a>
-            <a class="nav-link border text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Supplies/Goods</a>
-            <a class="nav-link border text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Misc</a>
-            <a class="nav-link border text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rent</a>
+      <div class="row rounded no-gutters">
+        <div class="col-md-3">
+          <nav class="nav flex-column nav-pills sidebar-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active bg-success" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+            <a class="nav-link text-success" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mileage</a>
+            <a class="nav-link text-success" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mortgage</a>
+            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maintenance</a>
+            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Supplies/Goods</a>
+            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Misc</a>
+            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rent</a>
           </nav>
         </div>
-        <div class="col-sm-10">
-          <table class="table border table-responsive-md table-responsive-sm table-striped table-sm">
-            <thead class="bg-dark">
+        <div class="col">
+          <table class="table border table-responsive-md table-responsive-sm table-striped table-sm mh-100" id="expenses-table">
+            <thead class="bg-dark text-light">
               <tr>
                 <th scope="col"><input type="checkbox"></th>
                 <th scope="col">Date</th>
@@ -102,19 +102,6 @@
                 <td class="image-upload">
                   <label for="file-input">
                       <i class="far fa-images"></i>
-                  </label>
-                  <input type="file" name="pic" accept="image/*" id="file-input">
-                </td>
-              </tr>
-              <tr>
-                <th scope="col"><input type="checkbox"></th>
-                <td>7/15/18</td>
-                <td>Interest</td>
-                <td>$2000</td>
-                <td>Mortgage</td>
-                <td class="image-upload">
-                  <label for="file-input">
-                    <i class="far fa-images"></i>
                   </label>
                   <input type="file" name="pic" accept="image/*" id="file-input">
                 </td>
