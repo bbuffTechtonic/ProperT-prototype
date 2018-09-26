@@ -67,6 +67,20 @@ Extra large devices (large desktops, 1200px and up)
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.carousel-caption>h3{
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption>h3{
+    font-size: 20px;
+  }
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
+  width: 75%;
 }
