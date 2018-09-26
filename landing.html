@@ -35,6 +35,20 @@
         <div class="row justify-content-center">
           <div class="pt-5 col-10 col-sm-6 col-md-5 col-lg-4 col-xl-4">
             <h1 class="text-center">ProperT</h1>
+            <div class="google-login">
+              <button type="submit" class="btn btn-primary btn-block mb-2">Sign in with Google</button>
+              <div class="row">
+                <div class="col">
+                  <hr>
+                </div>
+                <div class="col-2">
+                  <p class="text-center">or</p>
+                </div>
+                <div class="col">
+                  <hr>
+                </div>
+              </div>
+            </div>
             <form>
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
@@ -43,12 +57,14 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
               <div class="forgot pb-1 text-right">
-                <a href="reset-password.html" class="forgot-pass col-12 pr-0">Forgot Password?</a>
+                <small>
+                  <a href="reset-password.html" class="forgot-pass col-12 pr-0">Forgot Password?</a>
+                </small>
               </div>
-              <button type="submit" class="btn btn-primary col-12">Log In</button>
-              <div class="forgot pt-1 text-center">
+              <button type="sign-in" class="btn btn-success btn-block">Sign in</button>
+              <div class="new user text-center">
                 <hr>
-                <p>New User? <a href="" class="forgot-pass col-12 pr-0 pl-0">Sign Up</a></p>
+                <p>New User? <a href="" class="sign-up col-12 pr-1 pl-0">Sign Up</a></p>
               </div>
             </form>
           </div>
