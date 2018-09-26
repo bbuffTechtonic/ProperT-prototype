@@ -31,3 +31,8 @@ th {
   margin-bottom: 50px;
   /*border: solid 1px blue;*/
 }
+
+/* added this margin so footer didn't overlap container */
+#whole-stuff {
+  margin-bottom: 130px;
+}
