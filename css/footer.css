@@ -1,4 +1,12 @@
 footer {
-  height: 100px;
+  height: 130px;
   background-color: #343a40;
+}
+
+#copyright-text {
+  padding-top: 30px;
+}
+
+.footer-links {
+  padding-top: 10px;
 }

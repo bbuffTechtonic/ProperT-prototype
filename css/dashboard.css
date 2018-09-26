@@ -32,7 +32,7 @@ th {
   /*border: solid 1px blue;*/
 }
 
-/* adding this margin so footer doesn't overlap container */
+/* adding this margin so footer doesn't overlap container MC */
 #whole-stuff {
   margin-bottom: 130px;
 }

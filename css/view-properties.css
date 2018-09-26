@@ -85,7 +85,7 @@ Extra large devices (large desktops, 1200px and up)
   width: 75%;
 }
 
-/* adding this margin so footer doesn't overlap container */
+/* adding this margin so footer doesn't overlap container MC */
 .view-prop-container {
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
