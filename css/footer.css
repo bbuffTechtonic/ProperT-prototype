@@ -6,3 +6,27 @@ footer {
     line-height: 100px;
     background-color: #343a40;
 }
+
+
+/* OTHER ATTEMPT AT STICKY FOOTER. DISREGARD FOR NOW*/
+/* * {
+  margin: 0;
+}
+
+html, body {
+  height: 100%
+}
+
+.prop-details-container, #whole-stuff, .landing-container, .view-prop-container, .acct-mgmt-container, .reset-psswd-container{
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.prop-details-container, #whole-stuff, .landing-container, .view-prop-container, .acct-mgmt-container, .reset-psswd-container:after {
+  content: "";
+  display: block;
+}
+
+footer, .prop-details-container, #whole-stuff, .landing-container, .view-prop-container, .acct-mgmt-container, .reset-psswd-container:after {
+  height: 100px;
+} */
