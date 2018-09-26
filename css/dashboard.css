@@ -16,18 +16,18 @@ th {
 #ytd-totals {
   margin-top: 50px;
   margin-bottom: 50px;
-  border: solid 1px;
+  /*border: solid 1px purple;*/
 }
 
 
 #fiscal-year {
   margin-top: 50px;
   margin-bottom: 50px;
-  border: solid 1px;
+  /*border: solid 1px yellow;*/
 }
 
 #ytd-chart {
   margin-top: 50px;
   margin-bottom: 50px;
-  border: solid 1px;
+  /*border: solid 1px blue;*/
 }
