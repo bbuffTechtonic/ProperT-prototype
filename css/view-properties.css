@@ -13,6 +13,10 @@ Large devices (desktops, 992px and up)
 Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
 
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
 #property-chart {
   padding-top: 10px;
 }
