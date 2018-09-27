@@ -2,6 +2,10 @@
   font-family: 'Exo 2', sans-serif;
 }
 
+body {
+  background-image: url("../images/what-the-hex.png");
+}
+
 td.image-upload > input[type="file"] {
   display: none;
 }
@@ -16,7 +20,7 @@ label[for="file-input"]:hover {
 }
 
 #indiv-property-details {
-  margin: 40px 0px;
+  margin: 40px 0px 60px 0px;
 }
 
 #indiv-property-details-header {
@@ -30,4 +34,12 @@ label[for="file-input"]:hover {
 
 .indiv-prop-spec {
   margin-bottom: 3px;
+}
+
+#search-delete-add-row {
+  margin-bottom: 15px;
+}
+
+#exp-nav-card, #exp-detail-card {
+  padding: 0px 0px 10px 0px;
 }

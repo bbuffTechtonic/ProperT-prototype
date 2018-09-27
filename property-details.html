@@ -37,7 +37,6 @@
   <div class="container prop-details-container">
     <section id="indiv-property-details">
       <div class="row">
-        <!-- use another div for the following 2 columns to ensure the picture and prop details stay centered vertically? -->
         <div class="col-md-3">
           <img id="prop-image" class="img-fluid rounded mx-auto d-block" src="https://via.placeholder.com/255x255" alt="photo of current property">
         </div>
@@ -60,14 +59,14 @@
               </div>
               <br>
               <a href="#" class="btn btn-outline-success">Edit Details</a>
+              <a href="view-properties.html" class="btn btn-outline-success">Back to All Properties</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
     <section id="expense-details">
-      <div class="row">
+      <div class="row" id="search-delete-add-row">
         <div class="col-md-3 offset-md-3 col-4">
           <input type="text" name="search" id="search-input" placeholder="Search..." class="col">
         </div>
@@ -79,17 +78,24 @@
       </div>
       <div class="row">
         <div class="col-md-3">
-          <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active bg-success" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
-            <a class="nav-link text-success" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mileage</a>
-            <a class="nav-link text-success" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mortgage</a>
-            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maintenance</a>
-            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Supplies/Goods</a>
-            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Misc</a>
-            <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rent</a>
-          </nav>
+          <div class="card">
+            <div class="card-body" id="exp-nav-card">
+              <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active bg-success" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+                <a class="nav-link text-success" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Mileage</a>
+                <a class="nav-link text-success" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mortgage</a>
+                <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Maintenance</a>
+                <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Supplies/Goods</a>
+                <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Misc</a>
+                <a class="nav-link text-success" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rent</a>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div class="col">
+      </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body" id="exp-detail-card">
           <table class="table table-responsive-md table-striped table-sm" id="expenses-table">
             <thead class="bg-dark text-light">
               <tr>
@@ -210,6 +216,7 @@
           </table>
         </div>
       </div>
+    </div>
     </section>
   </div>
   <footer class="main-footer">
