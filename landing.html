@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/nav-test-styles.css">
+  <link rel="stylesheet" href="./css/landing.css">
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,500i,700,800" rel="stylesheet">
   <link rel="icon" href="./images/proper_t_logo.ico" type="image/x-icon"/>
   <title>ProperT</title>
 </head>
 <body>
-<!-- add logo as a favicon in title tab?? -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav-bar">
-    <!-- resize logo, header and footer sizes at breakpoints??-->
     <img id="nav-logo"class="navbar-brand" width="120px" src="images/logo-white-on-tp.png" alt="company logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,66 +22,70 @@
 <!-- links/buttons for login page; add other info here so it doesn't look so blank??? If so, what???-->
     </div>
   </nav>
-    <div class="container landing-container">
-      <section>
-        <div class="row justify-content-center">
-          <div class="pt-5 col-10 col-sm-6 col-md-5 col-lg-4 col-xl-4">
-            <h1 class="text-center">ProperT</h1>
-            <div class="google-login">
-              <button type="submit" class="btn btn-primary btn-block mb-2"><i class="fab fa-google"></i> Sign in with Google</button>
-              <div class="row">
-                <div class="col">
-                  <hr>
-                </div>
-                <div class="col-2">
-                  <p class="text-center">or</p>
-                </div>
-                <div class="col">
-                  <hr>
+  <div class="container landing-container">
+    <section>
+      <div class="row justify-content-center">
+        <div class="mt-5 mb-5 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="text-center">ProperT</h1>
+              <div class="google-login">
+                <button type="submit" class="btn btn-primary btn-block mb-2"><i class="fab fa-google"></i> Sign in with Google</button>
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                  <div class="col-3">
+                    <p class="text-center">or</p>
+                  </div>
+                  <div class="col">
+                    <hr>
+                  </div>
                 </div>
               </div>
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="forgot pb-1 text-right">
+                  <small>
+                    <a href="reset-password.html" class="forgot-pass col-12 pr-0">Forgot Password?</a>
+                  </small>
+                </div>
+                <button type="sign-in" class="btn btn-success btn-block">Sign in</button>
+                <div class="new user text-center">
+                  <hr>
+                  <p>New User? <a href="" class="sign-up col-12 pr-1 pl-0">Sign Up</a></p>
+                </div>
+              </form>
             </div>
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="forgot pb-1 text-right">
-                <small>
-                  <a href="reset-password.html" class="forgot-pass col-12 pr-0">Forgot Password?</a>
-                </small>
-              </div>
-              <button type="sign-in" class="btn btn-success btn-block">Sign in</button>
-              <div class="new user text-center">
-                <hr>
-                <p>New User? <a href="" class="sign-up col-12 pr-1 pl-0">Sign Up</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer class="main-footer">
-      <div class="container" id="footer-container">
-        <div class="row">
-          <div class="col-5 offset-1">
-            <span id="copyright-text" class="text-muted d-flex">&copy; 2018 DevFools, LLC</span>
-          </div>
-          <div class="col-5 footer-links">
-              <a class="d-flex float-right" href="https://www.facebook.com/" target="_blank" >
-                <img src="https://png.icons8.com/color/50/000000/facebook.png" alt="facebook link" width="50px">
-              </a>
-              <a class="d-flex float-right" href="https://twitter.com/" target="_blank">
-                <img src="https://png.icons8.com/color/50/000000/twitter.png" alt="twitter link" width="50px">
-              </a>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    </section>
+  </div>
+  <footer class="main-footer">
+    <div class="container" id="footer-container">
+      <div class="row">
+        <div class="col-5 offset-1">
+          <span id="copyright-text" class="text-muted d-flex">&copy; 2018 DevFools, LLC</span>
+        </div>
+        <div class="col-5 footer-links">
+            <a class="d-flex float-right" href="https://www.facebook.com/" target="_blank" >
+              <img src="https://png.icons8.com/color/50/000000/facebook.png" alt="facebook link" width="50px">
+            </a>
+            <a class="d-flex float-right" href="https://twitter.com/" target="_blank">
+              <img src="https://png.icons8.com/color/50/000000/twitter.png" alt="twitter link" width="50px">
+            </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>

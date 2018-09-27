@@ -17,6 +17,10 @@ Extra large devices (large desktops, 1200px and up)
   font-family: 'Exo 2', sans-serif;
 }
 
+body {
+  background-image: url("../images/what-the-hex.png");
+}
+
 #property-chart {
   padding-top: 10px;
 }
