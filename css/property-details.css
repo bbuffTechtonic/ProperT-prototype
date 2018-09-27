@@ -10,10 +10,6 @@ label[for="file-input"]:hover {
   cursor: pointer;
 }
 
-table #expenses-table {
-  height: 300px;
-}
-
 /* adding this margin so footer doesn't overlap container MC*/
 .prop-details-container {
   margin-bottom: 150px;
