@@ -17,27 +17,27 @@ th {
 }
 
 #ytd-totals {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /*border: solid 1px purple;*/
 }
 
 
 #fiscal-year {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /*border: solid 1px yellow;*/
 }
 
 #ytd-chart {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /*border: solid 1px blue;*/
 }
 
 /* adding this margin so footer doesn't overlap container MC */
 #whole-stuff {
-  margin-bottom: 130px;
+  margin-bottom: 10px;
 }
 
 #fy-col {
