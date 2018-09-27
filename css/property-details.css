@@ -30,6 +30,7 @@ label[for="file-input"]:hover {
 
 #prop-image {
   margin-bottom: 30px;
+  width: 255px;
 }
 
 .indiv-prop-spec {
