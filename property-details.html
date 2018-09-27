@@ -15,7 +15,7 @@
 <!-- add logo as a favicon in title tab?? -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="nav-bar">
     <!-- resize logo, header and footer sizes at breakpoints??-->
-    <img id="nav-logo"class="navbar-brand" width="120px" src="images/logo-white-on-tp.png" alt="company logo">
+    <img id="nav-logo" class="navbar-brand" width="120px" src="images/logo-white-on-tp.png" alt="company logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,34 +39,31 @@
       <div class="row">
         <!-- use another div for the following 2 columns to ensure the picture and prop details stay centered vertically? -->
         <div class="col-md-3">
-          <img class="img-fluid" src="https://via.placeholder.com/255x255" alt="photo of current property">
+          <img id="prop-image" class="img-fluid rounded mx-auto d-block" src="https://via.placeholder.com/255x255" alt="photo of current property">
         </div>
         <div class="col">
           <div class="card">
             <h5 id="indiv-property-details-header"class="card-header">Property Details</h5>
             <div class="card-body">
               <!-- START HERE on 9/27 -->
-              <h5 class="">123 Elm St.</h5>
-              <h5 class="">#305</h5>
-              <h5 class="">Denver, CO 80209</h5>
-              <p class="card-text">Current Tenant: </p>
-              <p class="card-text">Current Tenant: </p>
-              <p class="card-text">Current Tenant: </p>
-              <p class="card-text">Current Tenant: </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div id="indiv-prop-address">
+                <h5 class="">123 Elm St.</h5>
+                <h5 class="">#305</h5>
+                <h5 class="">Denver, CO 80209</h5>
+              </div>
+              <br>
+              <div id="prop-specs">
+                <p id="tenant-name" class="card-text indiv-prop-spec">Current Tenant: John Williams</p>
+                <p id="tenant-email" class="card-text indiv-prop-spec">Current Tenant Email: jwilliams@jj.com</p>
+                <p id="rental-amount" class="card-text indiv-prop-spec">Monthly Rental Amount: $1,350.00</p>
+                <p id="lease-range" class="card-text indiv-prop-spec">Lease Date Range: 6/1/2018 - 5/31/2019</p>
+              </div>
+              <br>
+              <a href="#" class="btn btn-outline-success">Edit Details</a>
             </div>
           </div>
-
         </div>
       </div>
-      <!-- Property Image -->
-      <!-- Address Line 1 -->
-      <!-- Address Line 2 -->
-      <!-- City, State, Zip -->
-      <!-- Current Tenant -->
-      <!-- Current Tenant Email -->
-      <!-- Current Rent Amount -->
-      <!-- Current Lease Date Range -->
     </section>
     <section id="expense-details">
       <div class="row">
@@ -215,15 +212,19 @@
     </section>
   </div>
   <footer class="main-footer">
-    <div class="container">
-      <span id="copyright-text" class="text-muted d-flex justify-content-center">&copy; 2018 DevFools, LLC</span>
-      <div class="footer-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="https://png.icons8.com/color/50/000000/facebook.png" alt="facebook link" width="50px">
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <img src="https://png.icons8.com/color/50/000000/twitter.png" alt="twitter link" width="50px">
-        </a>
+    <div class="container" id="footer-container">
+      <div class="row">
+        <div class="col-5 offset-1">
+          <span id="copyright-text" class="text-muted d-flex">&copy; 2018 DevFools, LLC</span>
+        </div>
+        <div class="col-5 footer-links">
+            <a class="d-flex float-right" href="https://www.facebook.com/" target="_blank" >
+              <img src="https://png.icons8.com/color/50/000000/facebook.png" alt="facebook link" width="50px">
+            </a>
+            <a class="d-flex float-right" href="https://twitter.com/" target="_blank">
+              <img src="https://png.icons8.com/color/50/000000/twitter.png" alt="twitter link" width="50px">
+            </a>
+        </div>
       </div>
     </div>
   </footer>
