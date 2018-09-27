@@ -33,58 +33,79 @@
       <button id="logout-button"class="btn btn-outline-success" type="button">Logout</button>
     </div>
   </nav>
-  <div class="container acct-mgmt-container">
-    <section>
+  <section>
+    <div class="container acct-mgmt-container">
       <div class="row justify-content-center">
         <div class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-4">
-          <h3>Update account info</h3>
-          <form>
-            <div class="form group">
-              <label for="validationDefault01">First name</label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="First" required>
-            </div>
-            <div class="last">
-              <label for="validationDefault02">Last name</label>
-              <input type="text" class="form-control" id="validationDefault02" placeholder="Last" required>
-            </div>
-            <div class="email">
-              <label for="validationDefaultUsername">Email Address</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-envelope"></i></span>
+          <h3 class="text-center">Manage your account</h3>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="info" aria-selected="true">Account Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="Password" aria-selected="false">Password</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <form>
+                <div class="form group first mt-2">
+                  <label for="first-name">First name</label>
+                  <input type="text" class="form-control" id="validationDefault01" placeholder="First" required>
                 </div>
-                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
-          </form>
-        </div>
-        <div class="col-10 col-sm-6 col-md-5 col-lg-4 col-xl-4">
-          <h3>Change password</h3>
-          <form>
-            <div class="form group">
-              <label for="validationDefault01">First name</label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="First" required>
-            </div>
-            <div class="last">
-              <label for="validationDefault02">Last name</label>
-              <input type="text" class="form-control" id="validationDefault02" placeholder="Last" required>
-            </div>
-            <div class="email">
-              <label for="validationDefaultUsername">Email Address</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-envelope"></i></span>
+                <div class="form group last">
+                  <label for="last">Last name</label>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Last" required>
                 </div>
-                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
-              </div>
+                <div class="form group email">
+                  <label for="email">Email Address</label>
+                  <div class="input-group email">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Update</button>
+              </form>
             </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
-          </form>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form>
+                  <div class="form group current mt-2">
+                    <label for="current">Current Password</label>
+                    <div class="input-group old">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-key"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="validationDefault02" placeholder="Current" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                  </div>
+                  <div class="form group new">
+                    <label for="new">New Password</label>
+                    <div class="input-group new">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-key"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="validationDefault02" placeholder="New" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                  </div>
+                  <div class="form group confirm">
+                    <label for="confirm">Confirm New Password</label>
+                    <div class="input-group confirm">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-key"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="validationDefault02" placeholder="Confirm" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Update</button>
+                </form>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 <!-- THIS FOOTER NEEDS TO BE UPDATED!!!! RUNNING INTO MERGE ISSUES ON 9/27 SO DIDN'T UPDATE THIS PAGE -->
   <footer class="main-footer">
     <div class="container">
