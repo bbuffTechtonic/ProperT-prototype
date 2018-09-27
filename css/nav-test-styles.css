@@ -1,0 +1,11 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #nav-bar {
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #nav-logo {
+    width: 25%;
+  }
+}
