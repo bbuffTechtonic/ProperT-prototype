@@ -3,7 +3,7 @@
 }
 
 footer {
-  height: 130px;
+  height: 90px;
   background-color: #343a40;
 }
 
@@ -12,10 +12,5 @@ footer {
 }
 
 .footer-links {
-  padding-top: 25px;
+  padding-top: 20px;
 }
-/* 
-#footer-container {
-  width: 50%;
-
-} */
