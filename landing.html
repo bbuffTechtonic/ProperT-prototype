@@ -19,8 +19,8 @@
   <div class="container landing-container">
     <section>
       <div class="row justify-content-center">
-        <div class="mt-5 mb-2 col-sm-10 col-md-8 col-lg-6 col-xl-6">
-          <div class="card">
+        <div class="mt-5 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+          <div class="card show multi-collapse">
             <div class="card-body">
               <h1 class="text-center">ProperT</h1>
               <div class="google-login">
@@ -38,11 +38,21 @@
                 </div>
               </div>
               <form>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                <div class="form-group email">
+                  <div class="input-group email">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrependEmail"><i class="far fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="signInEmail" aria-describedby="signInEmail" placeholder="Email" required>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div class="form-group password">
+                  <div class="input-group password">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrependPassword"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="signInPassword" aria-describedby="signUpEmail" placeholder="Password" required>
+                  </div>
                 </div>
                 <div class="forgot pb-1 text-right">
                   <small>
@@ -54,7 +64,71 @@
                 <!-- <button type="sign-in" class="btn btn-success btn-block">Sign in</button> -->
                 <div class="new user text-center">
                   <hr>
-                  <p>New User? <a href="" class="sign-up col-12 pr-1 pl-0">Sign Up</a></p>
+                  <p>New User? <a href="#" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Sign Up</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
+          <div class="card collapse multi-collapse">
+            <div class="card-body">
+              <h1 class="text-center">ProperT</h1>
+              <div class="google-login">
+                <button type="submit" class="btn btn-primary btn-block mb-2"><i class="fab fa-google"></i> Sign up with Google</button>
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                  <div class="col-3">
+                    <p class="text-center">or</p>
+                  </div>
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+              </div>
+              <form>
+                <div class="form-group first-name">
+                  <div class="input-group last">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrependFirstName"><i class="far fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="signUpFirstName" aria-describedby="firstName" placeholder="First" required>
+                  </div>
+                </div>
+                <div class="form-group last-name">
+                  <div class="input-group last">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrependLastName"><i class="far fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="signUpLastName" placeholder="Last" required>
+                  </div>
+                </div>
+                <div class="form-group email">
+                  <div class="input-group email">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrependUpEmail"><i class="far fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="signUpEmail" aria-describedby="signUpEmail" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="form-group password">
+                  <div class="input-group password">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrependUpPassword"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="signUpPassword" placeholder="Create Password" required>
+                  </div>
+                </div>
+                <a class="btn btn-success btn-block" href="dashboard.html" role="button">Sign Up</a>
+                <!-- Temporarily disabling submit button and hard coding link to dashboard-->
+                <!-- <button type="sign-in" class="btn btn-success btn-block">Sign Up</button> -->
+                <div class="new user text-center">
+                  <hr>
+                  <p>Already have an account? <a href="#" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Sign In</a></p>
                 </div>
               </form>
             </div>
