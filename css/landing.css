@@ -5,3 +5,13 @@
 body {
   background-image: url("../images/what-the-hex.png");
 }
+
+.landing-container {
+  padding-bottom: 100px;
+}
+
+#about-us-title {
+  border-bottom: 1px solid black;
+  padding-bottom: 7px;
+  /* background-color: gray; */
+}
