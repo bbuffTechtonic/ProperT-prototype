@@ -7,6 +7,14 @@ footer {
   background-color: #343a40;
 }
 
+footer .main-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
 #copyright-text {
   padding-top: 30px;
 }
