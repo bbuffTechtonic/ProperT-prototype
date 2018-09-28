@@ -38,10 +38,10 @@
   <section>
     <div class="container acct-mgmt-container">
       <div class="row justify-content-center">
-        <div class="mt-5 mb-5 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+        <div class="mt-5 mb-5 col">
           <div class="card">
             <div class="card-body">
-              <h3 class="text-center">Manage your account</h3>
+              <h3 class="text-center mb-3">Manage your account</h3>
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="info" aria-selected="true">Account Info</a>
@@ -53,13 +53,51 @@
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <form>
-                    <div class="form group first mt-2">
+                    <!--  -->
+                    <!--  -->
+                    <!--  -->
+<div class="row justify-content-center">
+
+                    <div class="col-12 col-sm-6 col-lg-5">
+                    <div class="form group avatar mt-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="No avatar uploaded" class="img-thumbnail img-fluid col-6 offset-3 col-sm-8 offset-sm-2 col-lg-8 offset-lg-2">
+                    <div class="row justify-content-center">
+                      <div class="col-10 col-sm-12 col-md-9 mt-2">
+
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Change Avatar</label>
+                    </div>
+
+                    </div>
+                  </div>
+</div>
+</div>
+
+
+
+
+
+                    <div class="col-12 col-sm-6">
+
+                    <div class="form group first mt-3">
+                      <!-- col-12 col-sm-5 -->
                       <label for="first-name">First name</label>
-                      <input type="text" class="form-control" id="validationDefault01" placeholder="First" required>
+                      <div class="input-group first">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="First" aria-describedby="inputGroupPrepend2" required>
+                      </div>
                     </div>
                     <div class="form group last">
                       <label for="last">Last name</label>
-                      <input type="text" class="form-control" id="validationDefault02" placeholder="Last" required>
+                      <div class="input-group last">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last" aria-describedby="inputGroupPrepend2" required>
+                      </div>
                     </div>
                     <div class="form group email">
                       <label for="email">Email Address</label>
@@ -70,12 +108,14 @@
                         <input type="text" class="form-control" id="validationDefault02" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
                       </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Update</button>
+                    <button class="btn btn-success float-right mt-4" type="submit">Save Changes</button>
+                  </div>
+                  </div>
                   </form>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <form>
-                    <div class="form group current mt-2">
+                    <div class="form group current p-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-3">
                       <label for="current">Current Password</label>
                       <div class="input-group old">
                         <div class="input-group-prepend">
@@ -84,7 +124,7 @@
                         <input type="password" class="form-control" id="validationDefault02" placeholder="Current" aria-describedby="inputGroupPrepend2" required>
                       </div>
                     </div>
-                    <div class="form group new">
+                    <div class="form group new p-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                       <label for="new">New Password</label>
                       <div class="input-group new">
                         <div class="input-group-prepend">
@@ -93,7 +133,7 @@
                         <input type="password" class="form-control" id="validationDefault02" placeholder="New" aria-describedby="inputGroupPrepend2" required>
                       </div>
                     </div>
-                    <div class="form group confirm">
+                    <div class="form group confirm p-0 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                       <label for="confirm">Confirm New Password</label>
                       <div class="input-group confirm">
                         <div class="input-group-prepend">
@@ -102,7 +142,7 @@
                         <input type="password" class="form-control" id="validationDefault02" placeholder="Confirm" aria-describedby="inputGroupPrepend2" required>
                       </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Update</button>
+                    <button class="btn btn-success float-right mt-4" type="submit">Update Password</button>
                   </form>
                 </div>
               </div>
