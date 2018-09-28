@@ -46,15 +46,19 @@
   <div id="whole-stuff" class="container">
     <section>
       <div id="fiscal-year" class="row justify-content-center">
-        <div id="fy-col" class="col-auto">
-          <select class="custom-select col-12" id="my-year">
-            <option value="Year" selected>Year</option>
+        <div id="fy-col" class="input-group col-6 col-sm-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="my-year">Year</label>
+          </div>
+          <select class="custom-select" id="my-year">
+            <option value="2018" selected>2018</option>
             <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
+            <option value="2019">2016</option>
+            <option value="2020">2015</option>
           </select>
-        </p>
+        </div>
+        <div class="col-auto" id="btn-individual-property">
+            <a href="view-properties.html" role="button" class="btn btn-outline-success">View Single Property</a>
         </div>
       </div>
       <!-- Canvas for Chart -->
@@ -89,11 +93,6 @@
               </table>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="btn-individual-property" class="row">
-        <div class="col-12 text-center">
-          <a href="view-properties.html" role="button" class="btn btn-outline-success">View Individual Properties</a>
         </div>
       </div>
     </section>
