@@ -20,7 +20,7 @@
     <section>
       <div class="row justify-content-center">
         <div class="mt-5 col-sm-10 col-md-8 col-lg-6 col-xl-6">
-          <div class="card show multi-collapse">
+          <div class="card show sign-in-collapse">
             <div class="card-body">
               <h1 class="text-center">ProperT</h1>
               <div class="google-login">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="forgot pb-1 text-right">
                   <small>
-                    <a href="reset-password.html" class="forgot-pass col-12 pr-0">Forgot Password?</a>
+                    <a href="#" data-toggle="collapse" data-target=".sign-in-collapse,.forgot-collapse" aria-expanded="true" aria-controls="signInCollapse forgotCollapse">Forgot Password?</a>
                   </small>
                 </div>
                 <a class="btn btn-success btn-block" href="dashboard.html" role="button">Sign In</a>
@@ -64,7 +64,7 @@
                 <!-- <button type="sign-in" class="btn btn-success btn-block">Sign in</button> -->
                 <div class="new user text-center">
                   <hr>
-                  <p>New User? <a href="#" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Sign Up</a></p>
+                  <p>New User? <a href="#" data-toggle="collapse" data-target=".sign-in-collapse,.sign-up-collapse" aria-expanded="false" aria-controls="signInCollapse signUpCollapse">Sign Up</a></p>
                 </div>
               </form>
             </div>
@@ -73,7 +73,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
-          <div class="card collapse multi-collapse">
+          <div class="card collapse sign-up-collapse">
             <div class="card-body">
               <h1 class="text-center">ProperT</h1>
               <div class="google-login">
@@ -128,7 +128,33 @@
                 <!-- <button type="sign-in" class="btn btn-success btn-block">Sign Up</button> -->
                 <div class="new user text-center">
                   <hr>
-                  <p>Already have an account? <a href="#" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Sign In</a></p>
+                  <p>Already have an account? <a href="#" data-toggle="collapse" data-target=".sign-up-collapse ,.sign-in-collapse" aria-expanded="false" aria-controls="signUpCollapse signInCollapse">Sign In</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
+          <div class="card collapse forgot-collapse">
+            <div class="card-body pb-2">
+              <h6 class="reset-instructions">Enter your email address and we will send you a link to reset your password</h6>
+              <form>
+                <div class="form group email">
+                  <div class="input-group email">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend2"><i class="far fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+                <button type="sign-in" class="btn btn-success btn-block mt-3">Send Email</button>
+                <div class="new user text-center">
+                  <hr class="mb-1">
+                  <small>
+                  <a class="p-=0" href="#" data-toggle="collapse" data-target=".forgot-collapse ,.sign-in-collapse" aria-expanded="false" aria-controls="forgotCollapse signInCollapse">Return to Sign In</a>
+                  </small>
                 </div>
               </form>
             </div>
